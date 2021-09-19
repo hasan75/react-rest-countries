@@ -26,7 +26,7 @@ function Countries (){
       <h4>Countries Available: {countries.length}</h4>
       <div className="countries">
       {
-        countries.map(country => <Country name={country.name} flag={country.flag}></Country>)
+        countries.map(country => <Country name={country.name} flag={country.flag} capital={country.capital}></Country>)
       }
       </div>
     </div>
@@ -38,6 +38,7 @@ function Country(props){
   return(
     <div className="country">
       <h3>Country Name: {props.name}</h3>
+      <h4>Capital: {props.capital}</h4>
       <img src={props.flag}alt="country_picture"></img>
     </div>
   )
