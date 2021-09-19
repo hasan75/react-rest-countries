@@ -6,7 +6,7 @@ const Country = (props) => {
     
     return (
         <div className="country">
-            <h4>Name:{name}</h4>
+            <h4>Country Name:{name}</h4>
             <h5>Capital:{capital}</h5>
             <h6>Population:{population}</h6>
             <p>Region:{region}</p>
