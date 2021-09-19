@@ -14,10 +14,7 @@ const Countries = () => {
         <div>
             <h1>Countries Found: {countries.length}</h1>
             {
-                countries.map(country => console.log(country))
-            }
-            {
-                countries.map(country => <Country country={country}></Country>)
+              countries.map(country => <Country country={country}></Country>)
             }
         </div>
     );
